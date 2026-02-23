@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background: #02010a;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.aura-flame {
+  animation: auraGlow 3.5s infinite linear;
+}
+
+@keyframes auraGlow {
+  0% { box-shadow: 0 0 20px #ff007f; }
+  50% { box-shadow: 0 0 40px #7f00ff; }
+  100% { box-shadow: 0 0 20px #00f7ff; }
+}
